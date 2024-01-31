@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.trailer-top {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(1, 183, 225, 1) 0%, rgba(86, 98, 189, 1) 0%, rgba(224, 146, 235, 1) 0%, rgba(105, 113, 155, 1) 0%, rgba(224, 152, 134, 1) 100%);
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    animation: top 2.5s alternate;
+}
+
+@keyframes top {
+    from {
+        filter: blur(8px);
+        
+    }
+
+    to {
+        filter: blur(0px);
+        
+
+    }
+}
+
+
+.trailer-watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4vh;
+    background-color: transparent;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+}
+
+.navbar {
+    height: 10vh;
+    width: 100%;
+    border-bottom: 0.2px solid rgb(65, 65, 65);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3vw;
+    justify-content: space-around;
+
+}
+
+.menu {
+
+    font-size: 2.1vh;
+    cursor: pointer;
+
+
+}
+
+li {
+    display: inline-block;
+    position: relative;
+
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    top: 37px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom;
+    transition: transform 0.01s ease-out;
+}
+
+button {
+    HEIGHT: 5vh;
+    width: 9vw;
+    font-size: 2vh;
+    background-color: #fcaf17;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+
+}
+
+button:hover {
+    background-color: #d4910a;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.nav-last {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.maingta {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    gap: 2vw
+}
+
+.gta6 {
+    height: 81vh;
+    width: 70vw;
+    display: inline-block;
+}
+
+.trailer1 {
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    GAP: 2vh;
+    justify-content: center;
+}
+
+.one {
+    font-weight: 600;
+    font-size: 2vh;
+    margin-top: -105px
+}
+
+.two {
+    font-weight: 600;
+    font-size: 5.2vh;
+}
+
+.trailer1 button {
+    background-color: black;
+    border: 0.08px solid white;
+    height: 8vh;
+    width: 15vw;
+    color: white;
+    font-size: 2.8vh;
+    margin-top: 2vh;
+}
+
+button:hover {
+    background-color: #d4910a;
+    color: black;
+    transition: 0.6s ease-out;
+}
+
+.arr {
+    width: 0.8vw;
+    display: inline-block;
+
+}
+
+.arr:hover {
+    transform: rotate(180deg);
+    transition: 0.7s;
+    left: 43px;
+    top: 2px;
+
+}
+
+.games {
+    height: 70vh;
+    width: 98vw;
+    background-color: #121212;
+    overflow: hidden;
+    left: 20vw;
+    top: 38vh;
+    display: none;
+}
+
+.drop {
+    height: 100%;
+    width: 0%;
+    margin-right: 30px;
+
+}
+
+.drop:hover+.games {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 114px;
+}
+
+
+.games h1 {
+    font-size: 5vh;
+    position: absolute;
+    left: 8vh;
+    top: 5vh;
+
+
+}
+
+.games div {
+    display: grid;
+    display: inline-block;
+    height: 50vh;
+    width: 20vw;
+}
+
+.arrow {
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    right: -8vw;
+    height: 4vh;
+    width: 11vw;
+    top: 15vh;
+}
+
+.news {
+    width: 100%;
+    background-color: #0B0B0B;
+    position: relative;
+
+}
+
+.threebox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.one1 {
+
+    height: 105vh;
+    width: 62.5vh;
+    border: 1px solid #282828;
+    border-radius: 10px;
+}
+
+.info {
+    background-color: black;
+    height: 42.6vh;
+    width: 29.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -4px;
+    border-radius: 0 0 10px 10px;
+}
+
+.info h5 {
+    font-size: 26px;
+    line-height: 35px;
+    width: 58vh;
+    margin-left: 25px;
+}
+
+.view-more {
+    width: 100%;
+    height: 10vh;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    flex-direction: column;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+}
+
+.vmhover {
+    position: absolute;
+    z-index: 3;
+}
+
+.underline {
+    height: 4px;
+    width: 115px;
+    background-color: #FCAF17;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 23px;
+    z-index: 1;
+    left: 0px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.vmhover:hover {
+    border-radius: 8px;
+    color: #161616;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.2s ease-out;
+}
+
+.vmhover:hover .underline {
+    height: 30px;
+    transition: 1s;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    z-index: -1;
+    padding: 0 10px 2px 1px;
+    transition: 0.1s;
+
+}
+
+.gamefeat {
+    height: 90vh;
+    width: 100%;
+    background-color: #0B0B0B;
+    position: relative;
+}
+
+.games2 {
+    height: 30vh;
+    width: 84vw;
+    padding-inline: 100px;
+    position: relative;
+}
+
+.arrow2 {
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    right: 9vw;
+    height: 4vh;
+    width: 11vw;
+    top: 7vh;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.lang {
+    width: 100%;
+    height: 10vh;
+
+}
+
+select {
+    height: 50px;
+    width: 185px;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    margin-left: 48vw;
+}
+
+option {
+    background-color: #0B0B0B;
+}
+
+select:focus {
+    border: 1px solid white;
+}
+
+.corpo {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -85px;
+}
+
+.corpo:hover {
+    color: #FCB016;
+
+}
+
+.last {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 15px;
+    margin-bottom: -40px;
+}
+
+.last-list ul {
+    display: flex;
+    width: 40vw;
+    gap: 45px;
+}
