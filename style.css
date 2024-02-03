@@ -406,3 +406,149 @@ select:focus {
     width: 40vw;
     gap: 45px;
 }
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* ... existing styles ... */
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        font-size: 2.5vh;
+    }
+
+    li {
+        display: block;
+        margin-bottom: 1vh;
+    }
+
+    .nav-last {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .maingta {
+        flex-direction: column;
+    }
+
+    .gta6,
+    .trailer1 {
+        width: 100%;
+    }
+
+    .trailer1 .two {
+        font-size: 4vh;
+    }
+
+    .trailer1 button {
+        width: 40vw;
+        font-size: 2vh;
+    }
+
+    .games {
+        width: 100%;
+        left: 0;
+        top: 150px;
+    }
+
+    .games img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .games h1 {
+        font-size: 4vh;
+        position: static;
+        left: 5%;
+        top: 2vh;
+    }
+
+    .news {
+        padding-bottom: 10vh;
+    }
+
+    .threebox {
+        flex-direction: column;
+    }
+
+    .threebox .one1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .info {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .info h5 {
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .view-more {
+        margin-top: 5vh;
+    }
+
+    .view-more .vmhover {
+        position: relative;
+    }
+
+    .view-more .vmhover .underline {
+        display: none;
+    }
+
+    .gamefeat,
+    .games2 {
+        padding-inline: 5%;
+    }
+
+    .arrow2 {
+        right: 5vw;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .lang select {
+        margin-left: 5vw;
+    }
+
+    .corpo {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .last {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .last-list ul {
+        width: 100%;
+        gap: 10px;
+    }
+}
